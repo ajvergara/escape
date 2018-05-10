@@ -357,6 +357,40 @@ img{
   margin-right: auto;
 }
 
-.wrapper--larger{
-    max-width: 1400px;
+.large-hero{
+  position: relative;
+}
+
+.large-hero__text-content{
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    text-align: center;
+    width: 100%;
   }
+
+.large-hero__subtitle{
+    font-size: 2rem;
+    color: #fff;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+  }
+
+.large-hero__title{
+    font-size: 4.125rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+.btn{
+  font-size: 1.4375rem;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #fff;
+  border-radius: 5px;
+  padding: 20px 66px;
+  display: inline-block;
+}
