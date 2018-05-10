@@ -407,3 +407,180 @@ img{
   padding: 20px 66px;
   display: inline-block;
 }
+
+.service-item__title{
+    font-size: 2rem;
+    font-family: "Josefin Sans", sans-serif;
+    margin-top: 0;
+    margin-bottom: .5em;
+    font-weight: 300;
+  }
+
+@media only screen and (min-width: 530px){
+
+.service-item__title{
+      font-size: 3.75rem
+  }
+  }
+
+.service-item strong{
+    font-weight: 700;
+  }
+
+.service-item__image--centered{
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+
+.service-item__image--b-margin-until-medium{
+    margin-bottom: 1rem;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item__image--b-margin-until-medium{
+      margin-bottom: 0
+  }
+  }
+
+.service-item--bg-gray{
+    background-color: #fafafa;
+  }
+
+.service-item--padding-top{
+    padding-top: 2rem;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item--padding-top{
+      padding-top: 100px
+  }
+  }
+
+.service-item--padding-bottom{
+    padding-bottom: 2rem;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item--padding-bottom{
+      padding-bottom: 100px
+  }
+  }
+
+.service-item--padding{
+    padding: 2rem 0;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item--padding{
+      padding: 100px 0
+  }
+  }
+
+.service-item__feature{
+    position: relative;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item__feature{
+      padding-left: 90px
+  }
+  }
+
+.service-item__icon{
+    background-color: #000;
+    display: block;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item__icon{
+      display: inline-block;
+      position: absolute;
+      left: 0
+  }
+  }
+
+/* Replace this with .icon once svg sprite is created */
+
+.service-item__icon-icon{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+.service-item__feature__title{
+    font-weight: 400;
+    text-align: center;
+  }
+
+@media only screen and (min-width: 768px){
+
+.service-item__feature__title{
+      text-align: left
+  }
+  }
+
+.page-section{
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 768px){
+
+.page-section{
+    padding: 6.25rem 0
+}
+  }
+
+.page-section--gray{
+    background-color: #fafafa;
+  }
+
+.row:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+@media only screen and (min-width: 768px){
+    .row__medium-4{
+      float: left;
+      width: 33.33%;
+    }
+
+    .row__medium-6{
+      float: left;
+      width: 50%;
+    }
+
+    .row__medium-8{
+      float: left;
+      width: 66.66%;
+    }
+  }
+
+.generic-content-container p{
+    color: #777;
+    padding-bottom: 1.8rem;
+    line-height: 1.65;
+  }
+
+@media only screen and (min-width: 530px){
+
+.generic-content-container p{
+      font-size: 1.125rem
+  }
+  }

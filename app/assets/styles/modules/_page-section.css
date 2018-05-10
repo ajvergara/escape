@@ -1,0 +1,11 @@
+.page-section{
+  padding: 2rem 0;
+
+  @mixin atMedium{
+    padding: 6.25rem 0;
+  }
+
+  &--gray{
+    background-color: #fafafa;
+  }
+}
