@@ -1,0 +1,17 @@
+.support-company{
+  display: flex;
+  justify-content: center;
+  padding: 60px 0;
+
+  ul{
+    text-align: center;
+  }
+
+  @mixin clearfix;
+
+  li{
+    list-style: none;
+    float: left;
+    padding-right: 40px;
+  }
+}

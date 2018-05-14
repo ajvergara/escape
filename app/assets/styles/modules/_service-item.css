@@ -20,6 +20,10 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    
+    @mixin atMedium{
+      margin-top: 18px;
+    }
   }
 
   &__image--b-margin-until-medium{
@@ -94,9 +98,14 @@
   &__feature__title{
     font-weight: 400;
     text-align: center;
-    
+    margin: 0;
+
     @mixin atMedium{
       text-align: left;
     }
+  }
+
+  &__feature__description{
+    margin: 0;
   }
 }

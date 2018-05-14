@@ -1,0 +1,53 @@
+.clients{
+  position: relative;
+  margin-bottom: 5rem;
+
+  &--left-padding{
+    padding-left: 16.6875rem;
+  }
+
+  &--right-padding{
+    padding-right: 16.6875rem;
+  }
+
+  &__image{
+    position: absolute;
+    top: 0;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    overflow: hidden;
+    background-color: red;
+  }
+
+  &__image--position-left{
+    left: 0;
+  }
+
+  &__image--position-right{
+    right: 0;
+  }
+
+  &__comment{
+    position: relative;
+    top: 24px;
+    border: 1px solid #e8e8e8;
+    background-color: #fff;
+    padding: 19px 53px 17px 78px;
+
+    p{
+      font-size: 1.425rem;
+      font-weight: 300;
+      max-width: 35.125rem;
+      margin-bottom: .4em;
+    }
+
+    .author, .company, .clients__info{
+      color: $mainBlue;
+      font-size: 1.125rem;
+      font-style: normal;
+      margin-top: 0;
+    }
+  }
+}

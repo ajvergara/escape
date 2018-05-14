@@ -1,6 +1,22 @@
 .row{
   @mixin clearfix;
 
+  &--gutters-small{
+    margin-right: -52px;
+  }
+
+  &--gutters-small > div{
+    padding-right: 52px;
+  }
+
+  &--gutters{
+    margin-right: -112px;
+  }
+
+  &--gutters > div{
+    padding-right: 112px;
+  }
+
   @mixin atMedium{
     &__medium-4{
       float: left;
