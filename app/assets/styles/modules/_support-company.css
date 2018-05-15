@@ -1,17 +1,12 @@
 .support-company{
   display: flex;
-  justify-content: center;
   padding: 60px 0;
 
-  ul{
-    text-align: center;
-  }
+  & img{
+    padding: 5px 30px;
 
-  @mixin clearfix;
-
-  li{
-    list-style: none;
-    float: left;
-    padding-right: 40px;
+    @mixin atMedium{
+      padding: 0 30px;
+    }
   }
 }
