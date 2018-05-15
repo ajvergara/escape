@@ -1,5 +1,14 @@
 .team-item{
   text-align: center;
+  margin-bottom: 40px;
+
+  @mixin atMedium{
+    margin-bottom: 0;
+  }
+
+  &--last{
+    margin-bottom: 0;
+  }
 
   &__image{
     height: 160px;
@@ -56,6 +65,6 @@
     font-size: 1.25rem;
     font-weight: 300;
     text-align: center;
-    width: 43rem;
+    max-width: 43rem;
   }
 }
