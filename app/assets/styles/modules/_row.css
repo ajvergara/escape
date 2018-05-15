@@ -17,6 +17,10 @@
     padding-right: 112px;
   }
 
+  &--b-margin{
+    margin-bottom: 3rem;
+  }
+
   @mixin atMedium{
     &__medium-3{
       float: left;

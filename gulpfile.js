@@ -6,11 +6,12 @@ const gulp         = require("gulp"),
       cssimport    = require("postcss-import"),
       cssnested    = require("postcss-nested"),
       cssmixin     = require("postcss-mixins"),
+      hexrgba      = require("postcss-hexrgba"),
       browserSync  = require("browser-sync").create();
 
 gulp.task("styles", function(){
   return gulp.src("./app/assets/styles/styles.css")
-    .pipe(postcss([cssimport, cssvars, cssmixin, autoprefixer, cssnested]))
+    .pipe(postcss([cssimport, cssvars, cssmixin, hexrgba, autoprefixer, cssnested]))
     .on("error", function(errorInfo){
       console.log(errorInfo.toString());
       this.emit("end");

@@ -16,4 +16,9 @@
       padding-bottom: 6.25rem;
     }
   }
+
+  &--black{
+    background-color: rgba($mainBlack, 1);
+    color: #fff;
+  }
 }
