@@ -595,6 +595,11 @@ img{
     color: #fff;
   }
 
+.page-section--violet{
+    background-color: #7690c5;
+    color: #fff;
+  }
+
 .row:after{
     content: "";
     clear: both;
@@ -619,6 +624,11 @@ img{
 
 .row--b-margin{
     margin-bottom: 3rem;
+  }
+
+.row__small-6{
+    float: left;
+    width: 50%;
   }
 
 @media only screen and (min-width: 768px){
@@ -679,6 +689,19 @@ img{
 
 .section-title__subtitle--no-t-margin{
     margin-top: 0;
+  }
+
+.section-title__subtitle--left-align{
+    text-align: left;
+  }
+
+.section-title--left-align{
+    text-align: left;
+  }
+
+.section-title--less-margin{
+    margin-top: 0;
+    margin-bottom: .2em;
   }
 
 .clients{
@@ -917,4 +940,139 @@ img{
     font-weight: 300;
     text-align: center;
     max-width: 43rem;
+  }
+
+.contact-item__icon{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    left: 0;
+  }
+
+.contact-item__text{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 39px;
+    font-weight: 300;
+    font-size: 1.125rem;
+    line-height: 1.75;
+  }
+
+.contact-item__form{
+
+  }
+
+.contact-item__name{
+    width: 100%;
+    height: 3.25rem;
+    padding: 15px 20px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+.contact-item__name::-webkit-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__name:-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__name::-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__name::placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__email{
+    width: 100%;
+    height: 3.25rem;
+    padding: 15px 20px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+.contact-item__email::-webkit-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__email:-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__email::-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__email::placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__textarea{
+    width: 100%;
+    padding: 15px 20px;
+    margin-bottom: 28px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+
+.contact-item__textarea::-webkit-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__textarea:-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__textarea::-ms-input-placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.contact-item__textarea::placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+.site-footer{
+  background-color: #7690c5;
+  color: #fff;
+  text-align: center;
+  font-weight: 400;
+}
+
+.site-footer__text{
+    border-top: 1px solid #87a0d2;
+    padding-top: 30px;
+    padding-bottom: 10px;
   }

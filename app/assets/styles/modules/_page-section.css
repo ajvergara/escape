@@ -21,4 +21,9 @@
     background-color: rgba($mainBlack, 1);
     color: #fff;
   }
+
+  &--violet{
+    background-color: $mainViolet;
+    color: #fff;
+  }
 }

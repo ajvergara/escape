@@ -21,6 +21,11 @@
     margin-bottom: 3rem;
   }
 
+  &__small-6{
+    float: left;
+    width: 50%;
+  }
+
   @mixin atMedium{
     &__medium-3{
       float: left;

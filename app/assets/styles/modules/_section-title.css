@@ -21,4 +21,17 @@
   &__subtitle--no-t-margin{
     margin-top: 0;
   }
+
+  &__subtitle--left-align{
+    text-align: left;
+  }
+
+  &--left-align{
+    text-align: left;
+  }
+
+  &--less-margin{
+    margin-top: 0;
+    margin-bottom: .2em;
+  }
 }
