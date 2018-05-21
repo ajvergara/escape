@@ -1,0 +1,23 @@
+.d-flex{
+  display: flex;
+
+  @mixin atMedium{
+    display: block;
+  }
+
+  &--wrap{
+    flex-wrap: wrap;
+  }
+
+  &--justify-content-center{
+    justify-content: center;
+  }
+
+  &--order-1{
+    order: 1;
+  }
+
+  &--order-2{
+    order: 2;
+  }
+}

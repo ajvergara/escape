@@ -14,6 +14,10 @@
     margin-bottom: 50px;
   }
 
+  &__subtitle--no-b-margin{
+    margin-bottom: .7em;
+  }
+
   &__subtitle--darker-white{
     color: $darkerWhite;
   }
@@ -22,8 +26,12 @@
     margin-top: 0;
   }
 
-  &__subtitle--left-align{
-    text-align: left;
+  &--left-align-on-medium{
+    text-align: center;
+
+    @mixin atMedium{
+      text-align: left;
+    }
   }
 
   &--left-align{

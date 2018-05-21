@@ -1,10 +1,10 @@
 .generic-content-container{
   p{
     color: #777;
-    padding-bottom: 1.8rem;
     line-height: 1.65;
 
     @mixin atSmall{
+      padding-bottom: 1.8rem;
       font-size: 1.125rem;
     }
   }

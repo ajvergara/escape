@@ -551,12 +551,14 @@ img{
     font-weight: 400;
     text-align: center;
     margin: 0;
+    margin-top: .5em;
   }
 
 @media only screen and (min-width: 768px){
 
 .service-item__feature__title{
-      text-align: left
+      text-align: left;
+      margin: 0
   }
   }
 
@@ -655,13 +657,13 @@ img{
 
 .generic-content-container p{
     color: #777;
-    padding-bottom: 1.8rem;
     line-height: 1.65;
   }
 
 @media only screen and (min-width: 530px){
 
 .generic-content-container p{
+      padding-bottom: 1.8rem;
       font-size: 1.125rem
   }
   }
@@ -683,6 +685,10 @@ img{
     margin-bottom: 50px;
   }
 
+.section-title__subtitle--no-b-margin{
+    margin-bottom: .7em;
+  }
+
 .section-title__subtitle--darker-white{
     color: #777;
   }
@@ -691,8 +697,15 @@ img{
     margin-top: 0;
   }
 
-.section-title__subtitle--left-align{
-    text-align: left;
+.section-title--left-align-on-medium{
+    text-align: center;
+  }
+
+@media only screen and (min-width: 768px){
+
+.section-title--left-align-on-medium{
+      text-align: left
+  }
   }
 
 .section-title--left-align{
@@ -783,7 +796,16 @@ img{
     top: 24px;
     border: 1px solid #e8e8e8;
     background-color: #fff;
-    padding: 19px 53px 17px 78px;
+    padding: 19px 18px 17px 18px;
+    text-align: center;
+  }
+
+@media only screen and (min-width: 768px){
+
+.clients__comment{
+      padding: 19px 53px 17px 78px;
+      text-align: left
+  }
   }
 
 @media only screen and (min-width: 768px){
@@ -943,10 +965,18 @@ img{
   }
 
 .contact-item__icon{
-    height: 30px;
-    width: 30px;
+    height: 25px;
+    width: 25px;
     position: absolute;
     left: 0;
+  }
+
+@media only screen and (min-width: 530px){
+
+.contact-item__icon{
+      height: 30px;
+      width: 30px
+  }
   }
 
 .contact-item__text{
@@ -954,8 +984,15 @@ img{
     padding-left: 40px;
     margin-bottom: 39px;
     font-weight: 300;
-    font-size: 1.125rem;
+    font-size: .8rem;
     line-height: 1.75;
+  }
+
+@media only screen and (min-width: 530px){
+
+.contact-item__text{
+      font-size: 1.125rem
+  }
   }
 
 .contact-item__form{
@@ -1033,11 +1070,17 @@ img{
 .contact-item__textarea{
     width: 100%;
     padding: 15px 20px;
-    margin-bottom: 28px;
     border-radius: 5px;
     resize: none;
     font-size: 1.125rem;
     font-weight: 400;
+  }
+
+@media only screen and (min-width: 768px){
+
+.contact-item__textarea{
+      margin-bottom: 28px
+  }
   }
 
 .contact-item__textarea::-webkit-input-placeholder{
@@ -1075,4 +1118,31 @@ img{
     border-top: 1px solid #87a0d2;
     padding-top: 30px;
     padding-bottom: 10px;
+  }
+
+.d-flex{
+  display: flex;
+}
+
+@media only screen and (min-width: 768px){
+
+.d-flex{
+    display: block
+}
+  }
+
+.d-flex--wrap{
+    flex-wrap: wrap;
+  }
+
+.d-flex--justify-content-center{
+    justify-content: center;
+  }
+
+.d-flex--order-1{
+    order: 1;
+  }
+
+.d-flex--order-2{
+    order: 2;
   }
