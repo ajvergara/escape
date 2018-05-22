@@ -1,0 +1,19 @@
+.site-header{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  color: #fff;
+  padding: 40px 0;
+
+  &__logo {
+    @mixin clearfix;
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+  &__icon{
+    position: relative;
+    top: 8px;
+  }
+}

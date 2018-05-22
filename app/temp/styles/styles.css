@@ -1241,3 +1241,90 @@ img{
     width: 43px;
     background-position: 97.52427184466019% 82.00810648518815%;
   }
+
+.site-header{
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.site-header__logo {
+    float: left;
+    margin: 0;
+    text-transform: uppercase;
+  }
+
+.site-header__logo:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.site-header__icon{
+    position: relative;
+    top: 8px;
+  }
+
+.primary-nav:after{
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.primary-nav--pull-right{
+    float: right;
+  }
+
+.primary-nav ul{
+    margin: 0;
+    padding: 0;
+  }
+
+.primary-nav li{
+    float: left;
+    padding-right: 20px;
+    list-style: none;
+  }
+
+.primary-nav li:last-child{
+    padding-right: 0;
+  }
+
+.primary-nav a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 12px 0;
+    position: relative;
+  }
+
+.primary-nav a::after{
+      content: "";
+      height: 2px;
+      width: 100%;
+      background-color: #fff;
+      color: #000;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      transition: all .5s ease-out;
+      -webkit-transform: scaleX(0);
+              transform: scaleX(0);
+      -webkit-transform-origin: 0 100%;
+              transform-origin: 0 100%;
+    }
+
+.primary-nav a:hover::after{
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color: #fff;
+        color: #000;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        -webkit-transform: scaleX(1);
+                transform: scaleX(1);
+      }
