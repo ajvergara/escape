@@ -1,15 +1,13 @@
 .contact-item{
 
   &__icon{
-    height: 25px;
-    width: 25px;
     position: absolute;
     left: 0;
+  }
 
-    @mixin atSmall{
-      height: 30px;
-      width: 30px;
-    }
+  .icon{
+    transform-origin: 0 0;
+    transform: scale(.34, .32);
   }
 
   &__text{
@@ -18,7 +16,7 @@
     margin-bottom: 39px;
     font-weight: 300;
     font-size: .8rem;
-    line-height: 1.75;
+    line-height: 1.65;
 
     @mixin atSmall{
       font-size: 1.125rem;

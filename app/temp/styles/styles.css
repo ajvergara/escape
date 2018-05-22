@@ -946,14 +946,16 @@ img{
       margin: 0 5px;
     }
 
-.team-item__list img{
-      height: 25px;
-      width: 25px;
+.team-item__list .team-item__icon{
       position: absolute;
       left: 50%;
       top: 50%;
-      -webkit-transform: translate(-50%, -50%);
-              transform: translate(-50%, -50%);
+    }
+
+.team-item__list .icon {
+       display: block;
+       -webkit-transform: translate(-50%, -50%) scale(.27);
+               transform: translate(-50%, -50%) scale(.27);
     }
 
 .team-item__footer{
@@ -965,18 +967,15 @@ img{
   }
 
 .contact-item__icon{
-    height: 25px;
-    width: 25px;
     position: absolute;
     left: 0;
   }
 
-@media only screen and (min-width: 530px){
-
-.contact-item__icon{
-      height: 30px;
-      width: 30px
-  }
+.contact-item .icon{
+    -webkit-transform-origin: 0 0;
+            transform-origin: 0 0;
+    -webkit-transform: scale(.34, .32);
+            transform: scale(.34, .32);
   }
 
 .contact-item__text{
@@ -985,7 +984,7 @@ img{
     margin-bottom: 39px;
     font-weight: 300;
     font-size: .8rem;
-    line-height: 1.75;
+    line-height: 1.65;
   }
 
 @media only screen and (min-width: 530px){
@@ -1145,4 +1144,100 @@ img{
 
 .d-flex--order-2{
     order: 2;
+  }
+
+/* Do not edit modules/_sprites instead go to gulp/templates */
+
+.icon{
+    background-image: url("/assets/images/sprites/sprite-220b68e7.svg");
+  }
+
+.icon--browser-icon{
+    height: 38px;
+    width: 43px;
+    background-position: 87.0873786407767% 84.04358974358975%;
+  }
+
+.icon--camera-icon{
+    height: 33px;
+    width: 38px;
+    background-position: 66.18705035971223% 52.50632911392405%;
+  }
+
+.icon--escape{
+    height: 35px;
+    width: 40px;
+    background-position: 96.33734939759036% 93.07124681933843%;
+  }
+
+.icon--facebook{
+    height: 94px;
+    width: 54px;
+    background-position: 89.47630922693267% 69.99101796407186%;
+  }
+
+.icon--flow-tree-icon{
+    height: 227px;
+    width: 227px;
+    background-position: 0 100%;
+  }
+
+.icon--google-plus{
+    height: 93px;
+    width: 94.61px;
+    background-position: 99.55881128777159% 23.513432835820897%;
+  }
+
+.icon--ipad-icon{
+    height: 41px;
+    width: 41px;
+    background-position: 86.66666666666667% 94.5142118863049%;
+  }
+
+.icon--mail-icon{
+    height: 62px;
+    width: 94px;
+    background-position: 99.39058171745152% 46.931693989071036%;
+  }
+
+.icon--mobile-icon{
+    height: 102px;
+    width: 62px;
+    background-position: 70.22900763358778% 32.331288343558285%;
+  }
+
+.icon--person-icon{
+    height: 51px;
+    width: 27px;
+    background-position: 96.44859813084112% 62.0079575596817%;
+  }
+
+.icon--pinterest{
+    height: 105.4px;
+    width: 82.8px;
+    background-position: 74.15368081676519% 0;
+  }
+
+.icon--star-icon{
+    height: 42px;
+    width: 42px;
+    background-position: 99.95157384987894% 73.77461139896373%;
+  }
+
+.icon--twitter{
+    height: 78.77px;
+    width: 96px;
+    background-position: 99.94428969359332% 0;
+  }
+
+.icon--user-icon{
+    height: 201px;
+    width: 276px;
+    background-position: 0 0;
+  }
+
+.icon--video-icon{
+    height: 28.32px;
+    width: 43px;
+    background-position: 97.52427184466019% 82.00810648518815%;
   }
