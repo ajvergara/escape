@@ -3,7 +3,11 @@
   z-index: 2;
   width: 100%;
   color: #fff;
-  padding: 40px 0;
+  padding: 20px 0;
+
+  @mixin atLarge{
+    padding: 40px 0;
+  }
 
   &__logo {
     @mixin clearfix;
@@ -15,5 +19,26 @@
   &__icon{
     position: relative;
     top: 8px;
+  }
+
+  &__menu-icon{
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    top: 25px;
+    right: 17px;
+    background-color: #fff;
+
+    @mixin atLarge{
+      display: none;
+    }
+  }
+
+  &__menu-content{
+    display: none;
+
+    @mixin atLarge{
+      display: block;
+    }
   }
 }
