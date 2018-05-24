@@ -4,6 +4,16 @@
   width: 100%;
   color: #fff;
   padding: 20px 0;
+  background-color: transparent;
+  transition: all .3s ease-out;
+
+  &--is-expanded{
+    background-color: $violetBg;
+
+    @mixin atLarge{
+      background-color: transparent;
+    }
+  }
 
   @mixin atLarge{
     padding: 40px 0;
@@ -21,12 +31,22 @@
     top: 8px;
   }
 
-  &__menu-icon{
+  &__menu-btn{
     position: absolute;
-    height: 20px;
-    width: 20px;
     top: 25px;
     right: 17px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 8px;
+
+    @mixin atLarge{
+      display: none;
+    }
+  }
+
+  &__menu-icon{
+    height: 20px;
+    width: 20px;
     background-color: #fff;
 
     @mixin atLarge{
@@ -35,10 +55,19 @@
   }
 
   &__menu-content{
-    display: none;
+    opacity: 0;
+    transition: all .3s ease-out;
+    transform: scale(1.1);
 
     @mixin atLarge{
-      display: block;
+      opacity: 1;
+      transform: scale(1);
+    }
+
+    &--is-visible{
+      opacity: 1;
+      transform: scale(1);
     }
   }
+
 }

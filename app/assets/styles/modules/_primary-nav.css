@@ -1,5 +1,10 @@
 .primary-nav{
   @mixin clearfix;
+  padding-top: 12px;
+
+  @mixin atLarge{
+    padding-top: 0;
+  }
 
   &--pull-right{
     float: right;
@@ -8,6 +13,9 @@
   ul{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   li{

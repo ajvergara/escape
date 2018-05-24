@@ -1249,12 +1249,27 @@ img{
   width: 100%;
   color: #fff;
   padding: 20px 0;
+  background-color: transparent;
+  transition: all .3s ease-out;
+
 }
+
+.site-header--is-expanded{
+    background-color: #1e1935;
+  }
+
+@media only screen and (min-width: 992px){
+
+.site-header--is-expanded{
+      background-color: transparent
+  }
+  }
 
 @media only screen and (min-width: 992px){
 
 .site-header{
     padding: 40px 0
+
 }
   }
 
@@ -1275,12 +1290,25 @@ img{
     top: 8px;
   }
 
-.site-header__menu-icon{
+.site-header__menu-btn{
     position: absolute;
-    height: 20px;
-    width: 20px;
     top: 25px;
     right: 17px;
+    background-color: transparent;
+    border: 1px solid #fff;
+    padding: 5px 8px;
+  }
+
+@media only screen and (min-width: 992px){
+
+.site-header__menu-btn{
+      display: none
+  }
+  }
+
+.site-header__menu-icon{
+    height: 20px;
+    width: 20px;
     background-color: #fff;
   }
 
@@ -1292,20 +1320,44 @@ img{
   }
 
 .site-header__menu-content{
-    display: none;
+    opacity: 0;
+    transition: all .3s ease-out;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
 
 @media only screen and (min-width: 992px){
 
 .site-header__menu-content{
-      display: block
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1)
   }
   }
+
+.site-header__menu-content--is-visible{
+      opacity: 1;
+      -webkit-transform: scale(1);
+              transform: scale(1);
+    }
+
+.primary-nav{
+  padding-top: 12px;
+
+}
 
 .primary-nav:after{
     content: "";
     clear: both;
     display: table;
+  }
+
+@media only screen and (min-width: 992px){
+
+.primary-nav{
+    padding-top: 0
+
+}
   }
 
 .primary-nav--pull-right{
@@ -1315,6 +1367,9 @@ img{
 .primary-nav ul{
     margin: 0;
     padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
 .primary-nav li{
