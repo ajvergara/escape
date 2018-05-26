@@ -1293,7 +1293,7 @@ img{
 .site-header__menu-btn{
     position: absolute;
     top: 25px;
-    right: 17px;
+    right: 19px;
     background-color: transparent;
     border: 1px solid #fff;
     padding: 5px 8px;
@@ -1377,6 +1377,7 @@ img{
 
 .primary-nav{
   padding-top: 12px;
+  text-align: center;
 
 }
 
@@ -1396,6 +1397,16 @@ img{
 
 .primary-nav--pull-right{
     float: right;
+    display: block;
+    width: 100%;
+  }
+
+@media only screen and (min-width: 992px){
+
+.primary-nav--pull-right{
+      width: auto;
+      float: right
+  }
   }
 
 .primary-nav ul{
@@ -1420,8 +1431,15 @@ img{
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 12px 0;
+    padding: 5px 0;
     position: relative;
+  }
+
+@media only screen and (min-width: 992px){
+
+.primary-nav a{
+      padding: 12px 0
+  }
   }
 
 .primary-nav a::after{
@@ -1452,3 +1470,16 @@ img{
         -webkit-transform: scaleX(1);
                 transform: scaleX(1);
       }
+
+.reveal-item--is-hidden{
+    opacity: 0;
+    transition: all .5s ease-out;
+    -webkit-transform: translateY(100px) scale(1.2);
+            transform: translateY(100px) scale(1.2);
+  }
+
+.reveal-item--is-revealed{
+    opacity: 1;
+    -webkit-transform: translateY(0) scale(1);
+            transform: translateY(0) scale(1);
+  }

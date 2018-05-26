@@ -1,6 +1,7 @@
 .primary-nav{
   @mixin clearfix;
   padding-top: 12px;
+  text-align: center;
 
   @mixin atLarge{
     padding-top: 0;
@@ -8,6 +9,13 @@
 
   &--pull-right{
     float: right;
+    display: block;
+    width: 100%;
+
+    @mixin atLarge{
+      width: auto;
+      float: right;
+    }
   }
 
   ul{
@@ -32,8 +40,12 @@
     display: block;
     text-decoration: none;
     color: #fff;
-    padding: 12px 0;
+    padding: 5px 0;
     position: relative;
+
+    @mixin atLarge{
+      padding: 12px 0;
+    }
 
     &::after{
       content: "";

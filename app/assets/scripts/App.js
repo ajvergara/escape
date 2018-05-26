@@ -1,3 +1,5 @@
 import MobileMenu from "./modules/MobileMenu";
+import RevealOnScroll from "./modules/RevealOnScroll";
 
-var mobileMenu = new MobileMenu();
+const mobileMenu = new MobileMenu(),
+      revealOnScroll = new RevealOnScroll();
