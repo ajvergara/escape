@@ -5,4 +5,15 @@
   border-radius: 5px;
   padding: 20px 66px;
   display: inline-block;
+  background-color: transparent;
+  transition: all .3s ease-out;
+
+  @mixin atSmall{
+    font-size: 1.125rem;
+  }
+
+  &:hover{
+    background-color: #fff;
+    color: #000;
+  }
 }
