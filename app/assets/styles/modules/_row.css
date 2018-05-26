@@ -9,6 +9,14 @@
     padding-right: 52px;
   }
 
+  &--gutters-medium{
+    margin-right: -63px;
+  }
+
+  &--gutters-medium > div{
+    padding-right: 63px;
+  }
+
   &--gutters{
     margin-right: -112px;
   }

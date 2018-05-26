@@ -1,0 +1,125 @@
+.modal{
+  position: fixed;
+  background-color: rgba($mainViolet, .97);
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 5;
+  color: #fff;
+
+  &__inner{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+  }
+
+  &--close-x{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    transform: scaleX(1.4);
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all .3s ease-out;
+    transform-origin: 100% 100%;
+
+    &:hover{
+      color: $violetBg;
+    }
+  }
+
+  &__icon{
+    position: absolute;
+    left: 0;
+  }
+
+  .icon{
+    transform-origin: 0 0;
+    transform: scale(.34, .32);
+  }
+
+  &__text{
+    position: relative;
+    padding-left: 40px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    font-size: .8rem;
+    line-height: 1.65;
+
+    @mixin atSmall{
+      font-size: 1.125rem;
+      margin-bottom: 39px;
+    }
+  }
+
+  &__form{
+
+  }
+
+  &__name{
+    width: 100%;
+    height: 2.25rem;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    &::placeholder{
+      height: 3.25rem;
+      color: #bbb;
+      font-weight: 400;
+      margin-bottom: 28px;
+      font-size: 1.125rem;
+    }
+
+    @mixin atSmall{
+      height: 3.25rem;
+    }
+  }
+
+  &__email{
+    width: 100%;
+    height: 2.25rem;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    font-size: 1.125rem;
+    font-weight: 400;
+
+    &::placeholder{
+      height: 3.25rem;
+      margin-bottom: 28px;
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+
+    @mixin atSmall{
+      height: 3.25rem;
+    }
+  }
+
+  &__textarea{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    resize: none;
+    font-size: 1.125rem;
+    font-weight: 400;
+    height: 150px;
+
+    @mixin atMedium{
+      margin-bottom: 28px;
+      height: auto;
+    }
+
+    &::placeholder{
+      color: #bbb;
+      font-weight: 400;
+      font-size: 1.125rem;
+    }
+  }
+}
