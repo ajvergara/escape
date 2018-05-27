@@ -10,11 +10,13 @@
     <meta name="description" content="We will help you escape, travel buddies, escape-aholic">
 
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
+
+    <script src="temp/scripts/Vendor.js" charset="utf-8"></script>
   </head>
   <body id="escape">
   <header class="site-header">
     <div class="wrapper">
-      <h2 class="site-header__logo"><a href="#escape"><img class="site-header__icon" src="assets/images/icons/escape.svg" alt="Escape Logo"> Escape</a></h2>
+      <h2 class="site-header__logo"><a href="#escape"><div class="site-header__icon icon icon--escape"></div> Escape</a></h2>
 
       <button class="site-header__menu-btn" type="button" name="button">
         <div class="site-header__menu-icon">
@@ -165,7 +167,7 @@ aenean rhoncus posuere odio in tincidunt. </p>
     <div class="wrapper wrapper--medium wrapper--no-padding-until-medium">
       <div class="clients clients--left-padding">
         <div class="clients__image clients__image--position-left">
-          <img sizes="220px" srcset="assets/images/testimonial-samantha.jpg 220w, assets/images/testimonial-samantha-hi-dpi.jpg 440w" alt="Samantha Smith">
+          <img class="lazyload" sizes="220px" data-srcset="assets/images/testimonial-samantha.jpg 220w, assets/images/testimonial-samantha-hi-dpi.jpg 440w" alt="Samantha Smith">
         </div>
         <div class="clients__comment">
           <p>“ Proin iaculis purus consequat sem cure  digni ssim
@@ -187,7 +189,7 @@ donec porttitora entum suscipit aenean rhoncus. ”
         </div>
 
         <div class="clients__image clients__image--position-right clients--flex-order-1">
-          <img sizes="220px" srcset="assets/images/testimonial-mohammad.jpg 220w, assets/images/testimonial-mohammad-hi-dpi.jpg 440w" alt="Mohammad Faruq">
+          <img class="lazyload" sizes="220px" data-srcset="assets/images/testimonial-mohammad.jpg 220w, assets/images/testimonial-mohammad-hi-dpi.jpg 440w" alt="Mohammad Faruq">
         </div>
       </div>
 
@@ -196,10 +198,10 @@ donec porttitora entum suscipit aenean rhoncus. ”
 
   <section id="supporting-company" class="support-company">
     <div class="wrapper d-flex d-flex--wrap d-flex--justify-content-center">
-      <img sizes="152px" srcset="assets/images/envato.jpg 152w, assets/images/envato-hi-dpi.jpg 306w" alt="Envato Logo">
-      <img sizes="186px" srcset="assets/images/wordpress.jpg 186w, assets/images/wordpress-hi-dpi.jpg 372w" alt="Wordpress Logo">
-      <img sizes="131px" srcset="assets/images/tuts+.jpg 131w, assets/images/tuts+-hi-dpi.jpg 262w" alt="Tuts+ Logo">
-      <img sizes="165px" srcset="assets/images/microlancer.jpg 165w, assets/images/microlancer-hi-dpi.jpg 330w" alt="Microlancer Logo">
+      <img class="lazyload" sizes="152px" data-srcset="assets/images/envato.jpg 152w, assets/images/envato-hi-dpi.jpg 306w" alt="Envato Logo">
+      <img class="lazyload" sizes="186px" data-srcset="assets/images/wordpress.jpg 186w, assets/images/wordpress-hi-dpi.jpg 372w" alt="Wordpress Logo">
+      <img class="lazyload" sizes="131px" data-srcset="assets/images/tuts+.jpg 131w, assets/images/tuts+-hi-dpi.jpg 262w" alt="Tuts+ Logo">
+      <img class="lazyload" sizes="165px" data-srcset="assets/images/microlancer.jpg 165w, assets/images/microlancer-hi-dpi.jpg 330w" alt="Microlancer Logo">
     </div>
   </section>
 
@@ -215,7 +217,7 @@ donec porttitora entum suscipit aenean rhoncus. ”
         <div class="row__medium-4">
           <div class="team-item">
             <div class="team-item__image">
-              <img sizes="160px" srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Kitty McKitty">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-cat.jpg 160w, assets/images/testimonial-cat-hi-dpi.jpg 320w" alt="Kitty McKitty">
             </div>
             <h3 class="team-item__title">Kimberly Thompson</h3>
             <h4 class="team-item__subtitle">Marketer</h4>
@@ -232,7 +234,7 @@ donec porttitora entum suscipit aenean rhoncus. ”
         <div class="row__medium-4">
           <div class="team-item">
             <div class="team-item__image">
-              <img sizes="160px" srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-john.jpg 160w, assets/images/testimonial-john-hi-dpi.jpg 320w" alt="">
             </div>
             <h3 class="team-item__title">Rico Massimo</h3>
             <h4 class="team-item__subtitle">Coder</h4>
@@ -249,7 +251,7 @@ donec porttitora entum suscipit aenean rhoncus. ”
         <div class="row__medium-4">
           <div class="team-item team-item--last">
             <div class="team-item__image">
-              <img sizes="160px" srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
+              <img class="lazyload" sizes="160px" data-srcset="assets/images/testimonial-jane.jpg 160w, assets/images/testimonial-jane-hi-dpi.jpg 320w" alt="Jane Doe">
             </div>
             <h3 class="team-item__title">Uku Mason</h3>
             <h4 class="team-item__subtitle">Graphic Designer</h4>

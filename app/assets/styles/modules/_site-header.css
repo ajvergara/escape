@@ -29,7 +29,6 @@
     padding: 5px 0;
   }
 
-
   &__logo {
     @mixin clearfix;
     float: left;
@@ -40,6 +39,7 @@
   &__icon{
     position: relative;
     top: 8px;
+    display: inline-block;
   }
 
   &__menu-btn{

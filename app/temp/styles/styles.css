@@ -1187,7 +1187,7 @@ img{
 /* Do not edit modules/_sprites instead go to gulp/templates */
 
 .icon{
-    background-image: url("/assets/images/sprites/sprite-220b68e7.svg");
+    background-image: url("/assets/images/sprites/sprite-3ced2073.svg");
   }
 
 .icon--browser-icon{
@@ -1335,6 +1335,7 @@ img{
 .site-header__icon{
     position: relative;
     top: 8px;
+    display: inline-block;
   }
 
 .site-header__menu-btn{
