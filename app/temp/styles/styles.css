@@ -1447,6 +1447,13 @@ img{
     height: 0px;
   }
 
+@media only screen and (min-width: 992px){
+
+.site-header--dark .primary-nav{
+      height: auto
+  }
+  }
+
 .site-header__menu-content--is-visible .primary-nav{
     height: 60px;
   }
