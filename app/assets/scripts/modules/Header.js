@@ -1,5 +1,6 @@
 import $ from "jquery";
 import waypoints from "../../../../node_modules/waypoints/lib/noframework.waypoints";
+import smoothScroll from "jquery-smooth-scroll";
 
 class Header{
   constructor(){
@@ -12,6 +13,11 @@ class Header{
     this.homeTag = $("#escape-link");
     this.homeTagTrigger = $("#escape");
     this.homeWaypoints();
+    this.smoothScrolling();
+  }
+
+  smoothScrolling(){
+    this.navlinks.smoothScroll();
   }
 
   headerWaypoints(){
