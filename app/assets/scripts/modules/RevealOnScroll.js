@@ -7,6 +7,14 @@ class RevealOnScroll{
     this.offsetPercentage = offset;
     this.hideInitially();
     this.createWaypoints();
+    this.lazyImages = $(".lazyload");
+    this.wayPoinntsRefresh();
+  }
+
+  wayPoinntsRefresh(){
+    this.lazyImages.on("load", function(){
+      return Waypoint.refreshAll();
+    });
   }
 
   hideInitially(){
