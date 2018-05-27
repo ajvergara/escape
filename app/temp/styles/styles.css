@@ -771,7 +771,7 @@ img{
   }
   }
 
-.clients--d-flex{
+.flexbox .clients--d-flex{
     display: flex;
   }
 
@@ -1157,30 +1157,30 @@ img{
     padding-bottom: 10px;
   }
 
-.d-flex{
+.flexbox .d-flex{
   display: flex;
 }
 
 @media only screen and (min-width: 768px){
 
-.d-flex{
+.flexbox .d-flex{
     display: block
 }
   }
 
-.d-flex--wrap{
+.flexbox .d-flex--wrap{
     flex-wrap: wrap;
   }
 
-.d-flex--justify-content-center{
+.flexbox .d-flex--justify-content-center{
     justify-content: center;
   }
 
-.d-flex--order-1{
+.flexbox .d-flex--order-1{
     order: 1;
   }
 
-.d-flex--order-2{
+.flexbox .d-flex--order-2{
     order: 2;
   }
 

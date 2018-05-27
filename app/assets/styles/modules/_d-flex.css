@@ -1,4 +1,4 @@
-.d-flex{
+.flexbox .d-flex{
   display: flex;
 
   @mixin atMedium{
