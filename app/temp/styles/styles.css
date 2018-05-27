@@ -1291,6 +1291,11 @@ img{
 
 }
 
+.site-header a{
+    text-decoration: none;
+    color: #fff;
+  }
+
 .site-header--is-expanded{
     background-color: #1e1935;
   }
@@ -1426,7 +1431,6 @@ img{
   padding-top: 12px;
   text-align: center;
   transition: all .3s ease-out;
-
 }
 
 .primary-nav:after{
@@ -1439,7 +1443,6 @@ img{
 
 .primary-nav{
     padding-top: 0
-
 }
   }
 
@@ -1535,7 +1538,7 @@ img{
               transform-origin: 0 100%;
     }
 
-.primary-nav a:hover::after{
+.primary-nav a:hover::after,.primary-nav a.is-current-link::after{
         content: "";
         height: 2px;
         width: 100%;
@@ -1551,8 +1554,8 @@ img{
 .reveal-item--is-hidden{
     opacity: 0;
     transition: all .5s ease-out;
-    -webkit-transform: translateY(150px) scale(1.2);
-            transform: translateY(150px) scale(1.2);
+    -webkit-transform: translateY(150px) scale(1.1);
+            transform: translateY(150px) scale(1.1);
   }
 
 .reveal-item--is-revealed{

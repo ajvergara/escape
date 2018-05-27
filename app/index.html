@@ -11,10 +11,10 @@
 
     <link rel="stylesheet" type="text/css" href="temp/styles/styles.css">
   </head>
-  <body id="home">
+  <body id="escape">
   <header class="site-header">
     <div class="wrapper">
-      <h2 class="site-header__logo"><img class="site-header__icon" src="assets/images/icons/escape.svg" alt="Escape Logo"> Escape</h2>
+      <h2 class="site-header__logo"><a href="#escape"><img class="site-header__icon" src="assets/images/icons/escape.svg" alt="Escape Logo"> Escape</a></h2>
 
       <button class="site-header__menu-btn" type="button" name="button">
         <div class="site-header__menu-icon">
@@ -25,11 +25,11 @@
       <div class="site-header__menu-content">
         <nav class="primary-nav primary-nav--pull-right">
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#clients">Clients</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="#escape" id="escape-link">Home</a></li>
+            <li><a href="#services" id="services-link">Services</a></li>
+            <li><a href="#clients" id="clients-link">Clients</a></li>
+            <li><a href="#team" id="team-link">Team</a></li>
+            <li><a href="#contact" id="contact-link">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -50,7 +50,7 @@
       </div>
   </section>
 
-  <section id="services" class="page-section generic-content-container">
+  <section id="services" class="page-section generic-content-container" data-link="#services-link">
     <div class="service-item service-item--padding-bottom">
       <div class="wrapper">
         <div class="row d-flex d-flex--wrap d-flex--justify-content-center">
@@ -157,7 +157,7 @@ aenean rhoncus posuere odio in tincidunt. </p>
     </div>
   </section>
 
-  <section id="clients" class="page-section page-section--gray page-section--no-p-bottom-until-medium">
+  <section id="clients" class="page-section page-section--gray page-section--no-p-bottom-until-medium" data-link="#clients-link">
     <div class="wrapper">
       <h2 class="section-title section-title--no-margin">Awesome <strong>Clients</strong></h2>
       <p class="section-title__subtitle section-title__subtitle--no-t-margin ">See the nice things our clients said about us.</p>
@@ -203,7 +203,7 @@ donec porttitora entum suscipit aenean rhoncus. ”
     </div>
   </section>
 
-  <section id="amazing-team" class="page-section page-section--black">
+  <section id="team" class="page-section page-section--black" data-link="#team-link">
     <div class="wrapper">
       <h2 class="section-title section-title--no-margin">Amazing <strong>Team</strong></h2>
       <p class="section-title__subtitle section-title__subtitle--darker-white section-title__subtitle--no-t-margin">These wonderful people make work enjoyable.</p>
@@ -269,7 +269,7 @@ aenean rhoncus posuere odio in tincidunt proin iaculis.</p>
     </div>
   </section>
 
-  <section id="contact" class="page-section page-section--violet">
+  <section id="contact" class="page-section page-section--violet" data-link="#contact-link">
     <div class="wrapper">
       <div class="row">
         <div class="row__medium-6">

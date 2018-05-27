@@ -82,7 +82,7 @@
       transform-origin: 0 100%;
     }
 
-    &:hover{
+    &:hover, &.is-current-link{
       &::after{
         content: "";
         height: 2px;
@@ -96,5 +96,4 @@
       }
     }
   }
-
 }
