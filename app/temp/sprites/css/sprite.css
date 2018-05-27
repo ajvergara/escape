@@ -1,11 +1,11 @@
 /* Do not edit modules/_sprites instead go to gulp/templates */
 
   .icon{
-    background-image: url("/assets/images/sprites/sprite-3ced2073.svg");
+    background-image: url("../../assets/images/sprites/sprite-3ced2073.svg");
   }
 
   .no-svg .icon{
-    background-image: url("/assets/images/sprites/sprite-3ced2073.png");
+    background-image: url("../../assets/images/sprites/sprite-3ced2073.png");
   }
 
   .icon--browser-icon{
