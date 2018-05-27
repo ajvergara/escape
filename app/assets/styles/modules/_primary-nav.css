@@ -2,9 +2,26 @@
   @mixin clearfix;
   padding-top: 12px;
   text-align: center;
+  transition: all .3s ease-out;
 
   @mixin atLarge{
     padding-top: 0;
+  }
+
+  .site-header--dark &{
+    height: 0px;
+  }
+
+  .site-header__menu-content--is-visible &{
+    height: 60px;
+
+    @mixin atSmall{
+      height: 50px;
+    }
+
+    @mixin atLarge{
+      height: auto;
+    }
   }
 
   &--pull-right{

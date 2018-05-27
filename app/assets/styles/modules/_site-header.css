@@ -1,5 +1,5 @@
 .site-header{
-  position: absolute;
+  position: fixed;
   z-index: 2;
   width: 100%;
   color: #fff;
@@ -18,6 +18,12 @@
   @mixin atLarge{
     padding: 40px 0;
   }
+
+  &--dark{
+    background-color: rgba($violetBg, .9);
+    padding: 5px 0;
+  }
+
 
   &__logo {
     @mixin clearfix;
@@ -39,9 +45,14 @@
     border: 1px solid #fff;
     padding: 5px 8px;
     border-radius: 3px;
+    transition: all .3s ease-out;
 
     @mixin atLarge{
       display: none;
+    }
+
+    .site-header--dark &{
+      top: 12px;
     }
   }
 
